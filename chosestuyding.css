@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+nav{
+    padding: 0;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #DB6151;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 70px;
+}
+.nav-right img {
+    width:35px;
+    margin-right:0;
+    cursor: pointer;
+}
+.nav-right a{
+    padding: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .nav-right a {
+        padding: 25px;
+        font-size: 20px;
+    }
+}
+.nav-left .menu-icon{
+    width: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.nav-left .logo{
+    width: 30px;
+    cursor: pointer;
+}
+.sidebar{
+    background: #F4F2F2;
+    width: 177px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+.sidebar a img{
+    width: 32px;
+}
+.buTer{
+display: flex;
+    height: 70px;
+    padding:10px;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DB6151 ;
+    background-color: #DB6151;
+    border-radius: 64px;
+    width: 130px;
+    cursor: pointer;
+}
+.buTersmal {
+    display: flex;
+    height: 80px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DB6151;
+    background-color: #DB6151;
+    border-radius: 64px;
+    width: 55px;
+    cursor: pointer;
+}
+
+.shortcut-linkss {
+    position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 10px;
+}
+.itm{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+}
+.sidebar a img .itm img{
+    width: 12px;
+}
+
+
+.activee {
+    background-color: #F6E9E9;
+}
+.active:hover{
+    background-color: #F6E9E9;
+}
+.colorTer{
+    background-color: #6CA0A1;
+    border-color: #6CA0A1;
+}
+.colorTeer{
+    background-color: #FDC982;
+    border-color: #FDC982;
+}
+.colorTerActiv:hover{
+        background-color: #E0F2F2;
+            border-color: #6CA0A1;
+}
+.colorTeerActive:hover{
+    background-color:#FFF3E3;
+    border-color: #FDC982;
+}
+.color{
+    background: #5465DE;
+    border-color: #5465DE;
+}
+.colore{
+    background-color: #A988BC;
+    border-color: #A988BC;
+}
+.Coloractive:hover{
+        background:#97a0eb;
+            border-color: #5465DE;
+}
+.Coloractiv:hover{
+    background-color: #DBD3EF;
+    border-color: #A988BC;
+}
+
+@media (max-width: 876px) {
+    .sidebar {
+        display: none;
+
+    }
+}
+
+@media (min-width: 876px) {
+    .menu-icon {
+        display: none;
+
+    }
+
+    .sidebar {
+        display: block;
+
+    }
+}
+
+.head-sidebar {
+    transition: 0.5s;
+    display: block;
+}
+
+.dropbtn {
+background-color: #DB6151;
+    padding: 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    height: 15%;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 0;
+    top: 70px;
+    
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.show {
+    display: block;
+}
+
